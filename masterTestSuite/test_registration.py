@@ -18,12 +18,12 @@ class RegistrationCase(unittest.TestCase):
         signup = self.chrome_driver.find_element(By.XPATH, "//a[@href='https://www.phptravels.net/signup']")
         signup.click()
 
-        form_first_name =
-        form_last_name =
-        form_phone =
-        form_email =
-        form_password =
-        form_account_type =
+        form_first_name = self.chrome_driver.find_element(By.XPATH, "//input[@class='form-control'][@name='first_name']")
+        form_last_name = self.chrome_driver.find_element(By.XPATH, "//input[@class='form-control'][@name='first_name']")
+        form_phone = self.chrome_driver.find_element(By.XPATH, "//input[@class='form-control'][@name='phone']")
+        form_email = self.chrome_driver.find_element(By.XPATH, "//input[@class='form-control'][@name='email']")
+        form_password = self.chrome_driver.find_element(By.XPATH, "//input[@class='form-control'][@name='password']")
+        # form_account_type = self.chrome_driver.find_element(By.XPATH, "//input[@class='form-control'][@name='last_name']")
 
         self.assertEqual(True, False)  # add assertion here
 
